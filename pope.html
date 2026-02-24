@@ -21,7 +21,14 @@
             margin-bottom: 25px;
         }
 
+        .layout {
+            display: flex;
+            justify-content:space-between ;
+            position: relative;
+            width: 100%;
+            gap: 30px;
 
+        }
 
         h1 {
             margin: 0;
@@ -46,28 +53,27 @@
             padding-left: 20px;
 
         }
-        .layout {
-    display: flex;
-    gap: 30px;
-    align-items: flex-start;
-}
 
-figure {
-    margin: 0;
-}
+        figure {
+             margin: 0;
+             position: absolute;
+             right: 0;
+             top: 0;
+             z-index: 10;
+        }
 
-figure img {
-    width: 550px;
-    border-radius: 0px;
-}
+        figure img {
+            width: 550px;
+            border-radius: 0px;
+        }
 
-aside {
-    max-width: 400px;
-}
+        aside {
+            flex: 1;
+        }
 
-aside h2 {
-     background-color: rgba(204, 201, 245, 0.733);
-     font-weight: bold;
+        aside h2 {
+            background-color: rgba(204, 201, 245, 0.733);
+            font-weight: bold;
             font-family: 'Courier New', Courier, monospace;
             color: white;
             padding: 0;
@@ -87,10 +93,10 @@ aside h2 {
         Supreme Pontiff of the Universal Church, Primate of Italy, Archbishop and Metropolitan
         of the Roman Province, Sovereign of the State of Vatican City, Servant of the Servants of God.
     </div>
+    <br>
     <div class="layout">
 
-         <aside>
-
+     <aside>
         <h2>Quote:</h2>
         <ul>
         <br>
@@ -100,7 +106,7 @@ aside h2 {
         <li>“Working for a just distribution of wealth is not mere philanthropy. It is a moral obligation.”</li><br>
         
     </ul>
-    
+   
 
     <h2>Interesting Fact:</h2>
     <ul>
@@ -111,9 +117,11 @@ aside h2 {
         <li>Orders Domino’s take-out every Thursday.</li><br>
     </ul>
     </aside>
-    <figure> 
-    <img src="pope.png" alt="Pope Francis">
+
+     <figure> <br>
+     <img src="pope.png" alt="Pope Francis">
     </figure>
+    
 </div>
     <p>
         Report problems to the webmaster at 
